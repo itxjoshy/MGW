@@ -1,0 +1,58 @@
+#vision {
+  background: var(--color-primary);
+  .container {
+    background: none;
+  }
+}
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.section-label-vm {
+  background: rgb(255, 255, 255);
+  color: var(--color-primary);
+  padding: 3px 15px;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-lg);
+}
+.vm-card {
+  background: rgba(255, 255, 255, 0.237);
+  border: 1px solid rgba(255, 255, 255, 0.324);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+  margin-top: 0.6rem;
+}
+.vm-card h3 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+}
+.vm-card p {
+  font-size: 20px;
+  color: white;
+  line-height: 1.5;
+  font-weight: 300;
+  font-family: var(--font-body);
+  font-style: italic;
+}
+@media (max-width: 900px) {
+  .vm-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

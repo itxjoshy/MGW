@@ -1,0 +1,238 @@
+:root {
+  /* ensure these exist if not defined globally */
+  --primary: #0b5394;
+  --accent: #1e88e5;
+  --text: #0f1724;
+  --text-muted: #6b7280;
+  --card-bg: #fff;
+  --radius-md: 10px;
+  --radius-xl: 14px;
+  --card-shadow: 0 8px 28px rgba(16, 24, 40, 0.06);
+  --container-width: 1100px;
+}
+
+/* Layout for about section */
+.section-platform {
+  display: grid;
+  grid-template-columns: 20% 2fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Left column (content) */
+.about-content {
+  min-width: 260px;
+}
+
+/* Heading & lead */
+.section-platform h2 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3.4vw, 36px);
+  font-weight: 700;
+  line-height: 1.08;
+  margin: 0 0 0.6rem 0;
+  color: var(--text);
+}
+
+.section-platform p.lead,
+.section-platform p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0 0 1rem 0;
+  font-weight: 300;
+}
+
+/* Grid cards */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.about-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem;
+  box-shadow: var(--card-shadow);
+  border: 1px solid rgba(11, 83, 148, 0.04);
+}
+
+.about-card h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 15px;
+  color: var(--primary);
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.about-card p,
+.about-card li {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* capabilities list */
+ul.capabilities {
+  margin: 0;
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+/* Feature tabs visual row */
+.feature-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.feature-tab {
+  background: transparent;
+  border: 1px solid rgba(11, 83, 148, 0.12);
+  color: var(--primary);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: default;
+  font-size: 13px;
+}
+
+.feature-tab.active {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Aside preview (right column) */
+.about-preview {
+  width: 360px;
+  flex: 0 0 360px;
+}
+
+.about-preview > div {
+  background: var(--card-bg);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.about-preview > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(11, 83, 148, 0.08);
+}
+
+/* small preview text */
+.about-preview strong {
+  color: var(--text);
+}
+
+.about-preview p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 6px 18px rgba(11, 83, 148, 0.08);
+}
+
+/* Feature list items (if used) */
+.feature-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.feature-img {
+  width: 76px;
+  height: 76px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #e9eef8, #dbeafc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-text h4 {
+  margin: 0 0 6px 0;
+  font-size: 15px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.feature-text p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Responsive tweaks */
+@media (max-width: 980px) {
+  .section-platform {
+    flex-direction: column-reverse;
+    gap: 1.25rem;
+  }
+
+  .about-preview {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-platform h2 {
+    font-size: 20px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    padding: 0.18rem 0.5rem;
+  }
+
+  .about-card {
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.7rem;
+    font-size: 13px;
+  }
+}
