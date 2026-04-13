@@ -110,3 +110,18 @@ main .main-content .main-text {
   align-self: center;
   justify-self: center;
 }
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  main .main-content h1 {
+    font-size: var(--text-2xl);
+  }
+  main .main-content p {
+    font-size: var(--text-sm);
+  }
+  main .main-content .cta-buttons {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+}

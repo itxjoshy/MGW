@@ -3,7 +3,9 @@ header {
     background: none;
   }
 }
-
+header .mobile-menu-btn {
+  display: none;
+}
 header .logo img {
   width: 250px;
   object-fit: cover;
@@ -125,6 +127,13 @@ header .header-cta button:hover {
 
 /* Mobile */
 @media (max-width: 768px) {
+  header {
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    padding: 0;
+  }
   header .container {
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
@@ -166,17 +175,12 @@ header .header-cta button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.135);
+    background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.253);
     border-radius: var(--radius-md);
-    width: 44px;
-    height: 44px;
+    width: 54px;
+    height: 54px;
     cursor: pointer;
     color: white;
   }
-}
-
-/* Hide mobile button on desktop */
-header .mobile-menu-btn {
-  display: none;
 }
