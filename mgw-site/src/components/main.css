@@ -1,8 +1,5 @@
 main {
-  /* min-height: 96svh; */
-  background: var(--color-primary);
   border-radius: var(--radius-xl);
-
   position: relative;
   overflow: hidden;
   display: flex;

@@ -1,9 +1,33 @@
 import React from "react";
+import bgVid from "../assets/herobgvid.mp4";
 import "./main.css";
 
 function main({ marquee }) {
   return (
     <main className="main">
+      <video
+        src={bgVid}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+        poster="/path/to/poster.jpg"
+        style={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          objectPosition: "center",
+          zIndex: -1,
+          pointerEvents: "none",
+          filter: "brightness(0.6) saturate(0.95)", // tune contrast/brightness
+          opacity: 1,
+        }}
+        s
+      ></video>
       <div className="hero-dots"></div>
       <div className="hero-glow"></div>
       <div className="main-content">
