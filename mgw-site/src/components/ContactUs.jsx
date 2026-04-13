@@ -96,7 +96,7 @@ function ContactUs() {
                 <div className="label">Email</div>
                 <div className="value">
                   <a href="mailto:sales@smartsecure.com.ng">
-                    info@smartsecure.com
+                    sales@smartsecure.com.ng
                   </a>
                 </div>
               </div>

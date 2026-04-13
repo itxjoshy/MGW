@@ -45,7 +45,9 @@ export default function Footer() {
               <br />
               07030881335
             </span>
-            <a href="mailto:info@smartsecure.com">info@smartsecure.com</a>
+            <a href="mailto:sales@smartsecure.com.ng">
+              sales@smartsecure.com.ng
+            </a>
             <span>Abuja · Lagos · Port Harcourt</span>
           </div>
         </div>
