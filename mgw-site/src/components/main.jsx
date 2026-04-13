@@ -25,7 +25,6 @@ function main({ marquee }) {
           filter: "brightness(0.6) saturate(0.95)", // tune contrast/brightness
           opacity: 1,
         }}
-        s
       ></video>
       <div className="hero-dots"></div>
       <div className="hero-glow"></div>
