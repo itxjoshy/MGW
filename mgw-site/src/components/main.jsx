@@ -1,5 +1,5 @@
 import React from "react";
-import bgVid from "../assets/herobgvid.mp4";
+import bgVid from "/herobgvid.mp4";
 import "./main.css";
 
 function main({ marquee }) {
