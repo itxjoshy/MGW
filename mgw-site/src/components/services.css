@@ -70,6 +70,8 @@
   gap: 7px;
 }
 
-.services-grid {
-  grid-template-columns: 1fr;
+@media (max-width: 900px) {
+  .services-section .section-content ul {
+    grid-template-columns: 1fr;
+  }
 }

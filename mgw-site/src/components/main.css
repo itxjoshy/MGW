@@ -65,6 +65,7 @@ main .main-content {
   margin: 0 auto;
   height: 100%;
   position: relative;
+  padding: 0 var(--space-lg);
 }
 main .main-content h1 {
   font-size: var(--text-hero);

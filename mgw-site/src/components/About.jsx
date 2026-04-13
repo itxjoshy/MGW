@@ -6,8 +6,9 @@ function About() {
     <section className="about-section" style={{ paddingTop: 0 }}>
       <div className="container">
         <div className="section-platform">
-          <div className="section-label">About</div>
           <div className="about-content">
+            <div className="section-label">About</div>
+
             <h2>SmartSecure Business Solutions Limited</h2>
             <p className="lead">
               A trusted system integrator delivering innovative, scalable and

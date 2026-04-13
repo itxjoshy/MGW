@@ -67,6 +67,13 @@ body {
 
   color: var(--color-text-primary);
 }
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+}
 .section-label {
   background: rgb(255, 255, 255);
   color: var(--color-primary);

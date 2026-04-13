@@ -1,20 +1,7 @@
-:root {
-  /* ensure these exist if not defined globally */
-  --primary: #0b5394;
-  --accent: #1e88e5;
-  --text: #0f1724;
-  --text-muted: #6b7280;
-  --card-bg: #fff;
-  --radius-md: 10px;
-  --radius-xl: 14px;
-  --card-shadow: 0 8px 28px rgba(16, 24, 40, 0.06);
-  --container-width: 1100px;
-}
-
 /* Layout for about section */
 .section-platform {
   display: grid;
-  grid-template-columns: 20% 2fr;
+  grid-template-columns: 1fr max-content;
   gap: 2rem;
   align-items: flex-start;
 }
@@ -23,7 +10,14 @@
 .about-content {
   min-width: 260px;
 }
-
+.section-label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  padding: 0;
+  margin-bottom: 1rem;
+}
 /* Heading & lead */
 .section-platform h2 {
   font-family: var(--font-display);
