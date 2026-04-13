@@ -102,7 +102,6 @@ header .header-cta button:hover {
 /* Tablet */
 @media (max-width: 1024px) {
   header .container {
-    display: none;
     grid-template-columns: 1fr 2fr 1fr;
   }
 

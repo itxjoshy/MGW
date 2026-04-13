@@ -113,10 +113,18 @@ footer .logo img {
 }
 
 @media (max-width: 768px) {
+  footer .logo img {
+    width: 300px;
+    height: 75px;
+  }
   .ft-main {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem 1.5rem;
+    font-size: var(--text-base);
+  }
+  .ft-desc {
+    font-size: var(--text-base);
   }
 
   .ft-bottom {

@@ -6,10 +6,10 @@
   align-items: flex-start;
 }
 
-/* Left column (content) */
 .about-content {
   min-width: 260px;
 }
+
 .about-img img {
   width: 100%;
   height: 600px;
@@ -17,6 +17,7 @@
   object-fit: cover;
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 72% 100%, 0% 100%);
 }
+
 .section-label {
   font-size: var(--text-sm);
   font-weight: 700;
@@ -25,7 +26,7 @@
   padding: 0;
   margin-bottom: 1rem;
 }
-/* Heading & lead */
+
 .section-platform h2 {
   font-family: var(--font-display);
   font-size: clamp(22px, 3.4vw, 36px);
@@ -45,15 +46,15 @@
   font-weight: 300;
 }
 
-/* Grid cards */
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1.25rem;
 }
+
 .about-grid :nth-child(3) {
-  grid-column: 1/3;
+  grid-column: 1 / 3;
 }
 
 .about-card {
@@ -80,17 +81,16 @@
   font-weight: 300;
 }
 
-/* capabilities list */
 ul.capabilities {
   margin: 0;
   padding-left: 1.1rem;
   list-style: disc;
 }
+
 ul.capabilities li::marker {
   color: var(--color-primary);
 }
 
-/* Feature tabs visual row */
 .feature-tabs {
   display: flex;
   gap: 0.5rem;
@@ -116,7 +116,6 @@ ul.capabilities li::marker {
   border-color: transparent;
 }
 
-/* Aside preview (right column) */
 .about-preview {
   width: 360px;
   flex: 0 0 360px;
@@ -144,7 +143,6 @@ ul.capabilities li::marker {
   box-shadow: 0 12px 40px rgba(11, 83, 148, 0.08);
 }
 
-/* small preview text */
 .about-preview strong {
   color: var(--text);
 }
@@ -155,7 +153,6 @@ ul.capabilities li::marker {
   font-size: 13px;
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -172,7 +169,6 @@ ul.capabilities li::marker {
   box-shadow: 0 6px 18px rgba(11, 83, 148, 0.08);
 }
 
-/* Feature list items (if used) */
 .feature-item {
   display: flex;
   gap: 1rem;
@@ -207,10 +203,10 @@ ul.capabilities li::marker {
   font-weight: 300;
 }
 
-/* Responsive tweaks */
+/* Tablet */
 @media (max-width: 980px) {
   .section-platform {
-    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
     gap: 1.25rem;
   }
 
@@ -219,11 +215,38 @@ ul.capabilities li::marker {
     flex: 0 0 auto;
   }
 
-  .about-grid {
-    grid-template-columns: 1fr;
+  .about-img img {
+    height: 400px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
   }
 }
 
+/* Large mobile */
+@media (max-width: 640px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid :nth-child(3) {
+    grid-column: 1 / 2;
+  }
+
+  .about-preview > div {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+
+  .feature-tabs {
+    gap: 0.4rem;
+  }
+
+  .feature-tab {
+    font-size: 12px;
+    padding: 0.35rem 0.7rem;
+  }
+}
+
+/* Small mobile */
 @media (max-width: 480px) {
   .section-platform h2 {
     font-size: 20px;
@@ -238,8 +261,24 @@ ul.capabilities li::marker {
     padding: 1rem;
   }
 
+  .about-img img {
+    height: 260px;
+    clip-path: none;
+    border-radius: var(--radius-xl);
+  }
+
   .btn {
     padding: 0.5rem 0.7rem;
     font-size: 13px;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .feature-img {
+    width: 52px;
+    height: 52px;
   }
 }

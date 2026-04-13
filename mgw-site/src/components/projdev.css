@@ -110,12 +110,8 @@
   .proj-dev-content {
     grid-template-columns: 1fr;
   }
-  .proj-image {
-    order: 2;
-  }
+
   :root {
     --step-collapsed-height: 66px;
   }
 }
-
-/* ...existing code... */
