@@ -1,0 +1,128 @@
+.ft {
+  background: #0f0e0d;
+  font-family: "DM Sans", sans-serif;
+}
+footer .logo img {
+  width: 400px;
+  height: 100px;
+  object-fit: cover;
+}
+.ft-main {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.ft-desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.8;
+  max-width: 400px;
+  text-align: center;
+}
+
+.ft-col h4 {
+  font-family: "Syne", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.ft-col ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ft-col li a {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ft-col li a:hover {
+  color: #e8541a;
+}
+
+.ft-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ft-contact span,
+.ft-contact a {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  line-height: 1.7;
+  display: block;
+}
+
+.ft-contact a:hover {
+  color: #e8541a;
+}
+
+.ft-bottom {
+  padding: 1.25rem 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ft-copy {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.ft-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.ft-social {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.4);
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.ft-social:hover {
+  border-color: #e8541a;
+  color: #e8541a;
+}
+
+.ft-social svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 768px) {
+  .ft-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .ft-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1.25rem 1.5rem;
+  }
+}

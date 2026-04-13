@@ -1,7 +1,7 @@
 /* Layout for about section */
 .section-platform {
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
   align-items: flex-start;
 }
@@ -9,6 +9,13 @@
 /* Left column (content) */
 .about-content {
   min-width: 260px;
+}
+.about-img img {
+  width: 100%;
+  height: 600px;
+  object-position: center;
+  object-fit: cover;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 72% 100%, 0% 100%);
 }
 .section-label {
   font-size: var(--text-sm);
@@ -45,6 +52,9 @@
   gap: 1rem;
   margin-top: 1.25rem;
 }
+.about-grid :nth-child(3) {
+  grid-column: 1/3;
+}
 
 .about-card {
   background: var(--card-bg);
@@ -75,6 +85,9 @@ ul.capabilities {
   margin: 0;
   padding-left: 1.1rem;
   list-style: disc;
+}
+ul.capabilities li::marker {
+  color: var(--color-primary);
 }
 
 /* Feature tabs visual row */
