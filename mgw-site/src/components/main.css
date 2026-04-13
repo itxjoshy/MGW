@@ -120,8 +120,4 @@ main .main-content .main-text {
   main .main-content p {
     font-size: var(--text-sm);
   }
-  main .main-content .cta-buttons {
-    flex-direction: column;
-    gap: var(--space-sm);
-  }
 }
