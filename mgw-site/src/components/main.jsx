@@ -13,7 +13,6 @@ function main({ marquee }) {
         playsInline
         preload="auto"
         aria-hidden="true"
-        poster="/path/to/poster.jpg"
         style={{
           position: "absolute",
           inset: 0,
