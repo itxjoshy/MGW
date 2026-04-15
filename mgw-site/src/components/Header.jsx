@@ -5,6 +5,13 @@ import "./header.css";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleNavClick = (e, hash) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    const el = document.getElementById(hash.replace("#", ""));
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <header>
       <div className="container">
@@ -14,30 +21,37 @@ function Header() {
 
         <div className={`navlinks ${menuOpen ? "open" : ""}`}>
           <nav>
-            <a href="#home" onClick={() => setMenuOpen(false)}>
+            <a href="#home" onClick={(e) => handleNavClick(e, "#home")}>
               Home
             </a>
-            <a href="#about" onClick={() => setMenuOpen(false)}>
+            <a href="#about" onClick={(e) => handleNavClick(e, "#about")}>
               About us
             </a>
-            <a href="#services" onClick={() => setMenuOpen(false)}>
+            <a href="#services" onClick={(e) => handleNavClick(e, "#services")}>
               Services
             </a>
-            <a href="#industries" onClick={() => setMenuOpen(false)}>
-              Industries
+            <a
+              href="#project-devlivery"
+              onClick={(e) => handleNavClick(e, "#project-devlivery")}
+            >
+              Project development
             </a>
-            <a href="#partners" onClick={() => setMenuOpen(false)}>
+            <a href="#partners" onClick={(e) => handleNavClick(e, "#partners")}>
               Partners
             </a>
-            <a href="#contact" onClick={() => setMenuOpen(false)}>
+            <a href="#contact" onClick={(e) => handleNavClick(e, "#contact")}>
               Contact
             </a>
           </nav>
         </div>
 
         <div className="header-cta">
-          <button>Get started</button>
-          <button>Contact</button>
+          <button onClick={(e) => handleNavClick(e, "#contact")}>
+            Get started
+          </button>
+          <button onClick={(e) => handleNavClick(e, "#contact")}>
+            Contact
+          </button>
         </div>
 
         <button

@@ -4,7 +4,7 @@ import "./main.css";
 
 function main({ marquee }) {
   return (
-    <main className="main">
+    <main className="main" id="home">
       <video
         src={bgVid}
         autoPlay

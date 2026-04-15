@@ -113,7 +113,7 @@ function ProjDev() {
   };
 
   return (
-    <section className="project-delivery-section">
+    <section id="project-delivery" className="project-delivery-section">
       <div className="container">
         <div className="proj-dev-content">
           <div className="proj-image">

@@ -4,7 +4,7 @@ import "./about.css";
 
 function About() {
   return (
-    <section className="about-section" style={{ paddingTop: 0 }}>
+    <section id="about" className="about-section" style={{ paddingTop: 0 }}>
       <div className="container">
         <div className="section-platform">
           <div className="about-content">

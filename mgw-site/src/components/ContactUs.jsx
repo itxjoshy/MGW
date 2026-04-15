@@ -4,7 +4,7 @@ import "./contactus.css";
 
 function ContactUs() {
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <div className="container contact-grid">
         <div className="contact-left">
           <div className="eyebrow">Plan your visit</div>

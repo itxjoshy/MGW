@@ -148,7 +148,7 @@ const services = [
 function Services() {
   return (
     <>
-      <section className="services-section">
+      <section id="services" className="services-section">
         <div className="container">
           <h2 className="section-title">what can we do for you?</h2>
           <p className="section-subtitle">
