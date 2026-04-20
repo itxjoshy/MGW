@@ -34,32 +34,45 @@
   --radius-xl: clamp(14px, 2vw, 24px);
 
   /* colors stay the same — they don't need to be responsive */
-  --color-primary: #ff5a1f;
-  --color-primary-dark: #e04800;
-  --color-primary-light: #ff7a45;
-  --color-bg-base: #f0eff4;
+  --color-primary: #0f172a;
+  --color-accent: #059669;
+  --color-accent-light: #10b981;
+  --color-accent-dark: #064e3b;
+  --color-bg-base: #f8fafc;
   --color-bg-surface: #ffffff;
-  --color-bg-hero: #ff5a1f;
-  --color-bg-dark: #141414;
-  --color-text-primary: #0d0d0d;
-  --color-text-secondary: #4a4a4a;
-  --color-text-muted: #909090;
-  --color-text-on-orange: #ffffff;
-  --color-text-on-dark: #ffffff;
-  --color-text-on-dark-muted: rgba(255, 255, 255, 0.6);
-  --color-border: #e2e2e2;
+  --color-bg-dark: #0f172a;
+  --color-bg-glass: rgba(255, 255, 255, 0.4);
+
+  /* Typography Colors */
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+  --color-text-on-accent: #ffffff;
+  --color-text-on-dark: #f8fafc;
+  --color-text-on-dark-muted: rgba(248, 250, 252, 0.6);
+
+  /* Borders & Dividers */
+  --color-border: #e2e8f0;
   --color-border-dark: rgba(255, 255, 255, 0.1);
+
+  /* Typography Settings */
   --font-display: "Syne", sans-serif;
   --font-body: "DM Sans", sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.07);
-  --shadow-elevated: 0 8px 28px rgba(0, 0, 0, 0.12);
-  --shadow-orange: 0 4px 20px rgba(255, 90, 31, 0.3);
+  --font-weight-black: 900;
+
+  /* Elevation & Effects */
+  --shadow-card:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-elevated:
+    0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
   --transition-fast: 0.15s ease;
-  --transition-base: 0.25s ease;
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 body {
   font-family: var(--font-body);
   font-weight: var(--font-weight-regular);
@@ -88,7 +101,7 @@ header {
   left: 10px;
   right: 10px;
   z-index: 999;
-  background-color: #e0470065;
+  background-color: #a0a0a065;
   border-radius: var(--radius-xl);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

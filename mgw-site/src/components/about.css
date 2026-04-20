@@ -91,31 +91,6 @@ ul.capabilities li::marker {
   color: var(--color-primary);
 }
 
-.feature-tabs {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 1.25rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.feature-tab {
-  background: transparent;
-  border: 1px solid rgba(11, 83, 148, 0.12);
-  color: var(--primary);
-  padding: 0.45rem 0.9rem;
-  border-radius: 999px;
-  font-weight: 600;
-  cursor: default;
-  font-size: 13px;
-}
-
-.feature-tab.active {
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-  color: #fff;
-  border-color: transparent;
-}
-
 .about-preview {
   width: 360px;
   flex: 0 0 360px;

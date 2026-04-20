@@ -1,136 +1,111 @@
 .ft {
-  background: #0f0e0d;
-  font-family: "DM Sans", sans-serif;
+  background: var(--color-bg-dark);
+  font-family: var(--font-body);
+  width: 99%;
+  margin: 5px auto;
+  border-radius: 20px;
 }
 footer .logo img {
-  width: 400px;
-  height: 100px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  object-fit: contain;
 }
 .ft-main {
-  padding: 3rem;
+  padding: var(--space-2xl);
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 3rem;
+  gap: var(--space-2xl);
 }
-
 .ft-desc {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.45);
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.8;
   max-width: 400px;
-  text-align: center;
+  text-align: left;
 }
-
 .ft-col h4 {
-  font-family: "Syne", sans-serif;
-  font-size: 11px;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
   color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-sm);
 }
-
 .ft-col ul {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5rem;
 }
-
 .ft-col li a {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.45);
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--transition-base);
 }
-
 .ft-col li a:hover {
-  color: #e8541a;
+  color: var(--color-accent);
 }
-
 .ft-contact {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
-
 .ft-contact span,
 .ft-contact a {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.45);
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   line-height: 1.7;
   display: block;
 }
-
-.ft-contact a:hover {
-  color: #e8541a;
-}
-
 .ft-bottom {
-  padding: 1.25rem 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: var(--space-sm) var(--space-2xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .ft-copy {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.25);
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.5);
 }
-
 .ft-socials {
   display: flex;
-  gap: 12px;
+  gap: var(--space-sm);
 }
-
 .ft-social {
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
   transition:
-    border-color 0.2s,
-    color 0.2s;
+    border-color var(--transition-base),
+    color var(--transition-base);
 }
-
 .ft-social:hover {
-  border-color: #e8541a;
-  color: #e8541a;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
-
 .ft-social svg {
   width: 14px;
   height: 14px;
 }
-
 @media (max-width: 768px) {
   footer .logo img {
-    width: 300px;
-    height: 75px;
+    max-width: 200px;
   }
   .ft-main {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem 1.5rem;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
     font-size: var(--text-base);
-  }
-  .ft-desc {
-    font-size: var(--text-base);
-  }
-
-  .ft-bottom {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    padding: 1.25rem 1.5rem;
   }
 }

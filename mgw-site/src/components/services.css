@@ -17,8 +17,8 @@
 }
 
 .services-section .section-content {
-  background-color: #ff5b1f64;
-  color: var(--color-primary-dark);
+  background-color: #64748b3f;
+  color: #64748b;
   border-radius: var(--radius-lg);
 }
 .services-section .section-content ul {
@@ -40,7 +40,7 @@
 .service-icon {
   width: 44px;
   height: 44px;
-  background: #ff5b1f3c;
+  background: var(--color-primary);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
 .service-icon svg {
   width: 22px;
   height: 22px;
-  stroke: var(--shadow-orange);
+
   stroke-width: 1.5;
 }
 .service-card h3 {

@@ -49,9 +49,6 @@ function Header() {
           <button onClick={(e) => handleNavClick(e, "#contact")}>
             Get started
           </button>
-          <button onClick={(e) => handleNavClick(e, "#contact")}>
-            Contact
-          </button>
         </div>
 
         <button
