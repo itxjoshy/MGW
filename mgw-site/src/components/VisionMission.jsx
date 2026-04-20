@@ -5,12 +5,7 @@ function VisionMission() {
     <section id="vision">
       <div className="container">
         <span className="section-label-vm">Vision &amp; Mission</span>
-        <h2
-          className="section-title"
-          style={{ color: "white", marginBottom: "2rem" }}
-        >
-          What drives us
-        </h2>
+        <h2 className="section-title">What drives us</h2>
         <div className="vm-grid">
           <div className="vm-card">
             <h3>Vision</h3>

@@ -8,8 +8,10 @@ import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Banner from "./components/Banner";
 import ProjDev from "./components/ProjDev";
+import Partners from "./components/Partners";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
       <WhyChooseUs />
       <Banner />
       <ProjDev />
+      <Partners />
       <ContactUs />
       <Footer />
     </>

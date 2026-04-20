@@ -2,10 +2,14 @@
   text-align: center;
   font-family: var(--font-display);
   margin-bottom: var(--space-2xl);
+  font-weight: var(--font-weight-black);
 }
 .why-choose-us-section .section-header h2 {
   font-size: clamp(1.5rem, 3.5vw, 2.5rem);
-  margin-bottom: 0.5rem;
+
+  font-weight: var(--font-weight-black);
+  letter-spacing: -1px;
+  color: var(--color-accent);
 }
 .why-choose-us-section .section-header p {
   font-size: var(--text-base);

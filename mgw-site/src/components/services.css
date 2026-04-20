@@ -1,10 +1,11 @@
 .services-section {
   background: rgb(248, 248, 248);
   .section-title {
-    font-weight: 700;
-    color: var(--color-text-primary);
+    font-weight: var(--font-weight-black);
+    font-size: var(--text-xl);
+    color: var(--color-accent);
     line-height: 1.15;
-    letter-spacing: -0.02em;
+    letter-spacing: -1px;
     margin-bottom: 0.75rem;
   }
   .section-subtitle {

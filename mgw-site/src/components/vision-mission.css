@@ -29,9 +29,11 @@
   font-size: var(--text-2xl);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-accent);
   margin-bottom: var(--space-md);
   margin-top: 0.5rem;
+  font-weight: var(--font-weight-black);
+  letter-spacing: -1px;
 }
 .vm-card h3 {
   font-family: var(--font-display);
