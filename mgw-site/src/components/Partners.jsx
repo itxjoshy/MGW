@@ -35,12 +35,14 @@ function Partners() {
   ];
   return (
     <section id="partners" className="partners-section">
-      <div className="containe">
+      <div className="container">
         <h2>Our Partners</h2>
         <p>trusted by widely recognoised names in the industry</p>
         <div className="image-grid">
           {Images.map((image, _i) => (
-            <img src={image} key={_i} alt="partner-image" />
+            <div className="image-container">
+              <img src={image} key={_i} alt="partner-image" />
+            </div>
           ))}
         </div>
       </div>

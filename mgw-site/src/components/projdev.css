@@ -22,7 +22,7 @@
 .steps-grid {
   display: grid;
   gap: 0.8rem;
-  background-color: rgb(37, 37, 37);
+  background-color: var(--color-primary);
   padding: 20px;
 
   border-radius: var(--radius-lg);
@@ -74,7 +74,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary, #0b5394);
   cursor: pointer;
 }
 
