@@ -53,7 +53,8 @@ main .main-content {
   padding: 0 var(--space-lg);
 }
 main .main-content h1 {
-  font-size: var(--text-hero);
+  /* font-size: var(--text-hero); */
+  font-size: 2.3rem;
   font-weight: var(--font-weight-black);
   text-transform: capitalize;
   color: var(--color-text-on-accent);

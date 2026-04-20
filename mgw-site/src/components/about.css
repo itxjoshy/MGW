@@ -5,7 +5,9 @@
   gap: 2rem;
   align-items: flex-start;
 }
-
+.container:has(.section-platform) {
+  padding-top: 15px;
+}
 .about-content {
   min-width: 260px;
 }

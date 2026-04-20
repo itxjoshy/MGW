@@ -59,7 +59,7 @@ function Header() {
             </a>
             <a
               href="#project-devlivery"
-              onClick={(e) => handleNavClick(e, "#project-devlivery")}
+              onClick={(e) => handleNavClick(e, "#project-delivery")}
             >
               Project development
             </a>

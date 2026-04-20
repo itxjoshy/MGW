@@ -34,7 +34,9 @@ function main({ marquee }) {
           integrator
         </div>
         <div className="main-text">
-          <h1>Welcome to SmartSecure Business Solutions Limited</h1>
+          <h1>
+            Welcome to <br /> SmartSecure Business Solutions Limited
+          </h1>
           <p>
             End-to-End IT Infrastructure Solutions - 24/7 Technical Support
             Services - Multi-Country Presence Across Africa - Trusted by
