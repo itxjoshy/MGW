@@ -118,14 +118,14 @@ function ProjDev() {
         <div className="proj-dev-content">
           <div className="proj-image">
             <svg
-              width="100%"
-              viewBox="0 0 680 680"
+              viewBox="0 0 900 900"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
+              className="system-integration-wheel"
             >
               <defs>
                 <marker
-                  id="arr-orange"
+                  id="arr-green"
                   viewBox="0 0 10 10"
                   refX="8"
                   refY="5"
@@ -136,248 +136,534 @@ function ProjDev() {
                   <path
                     d="M2 1L8 5L2 9"
                     fill="none"
-                    stroke="#E8541A"
+                    stroke="#059669"
                     strokeWidth="1.8"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                 </marker>
+
+                <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#10b981" stopOpacity="0.12" />
+                  <stop offset="100%" stopColor="#0f172a" stopOpacity="0" />
+                </radialGradient>
+
+                <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+                  <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                  <feMerge>
+                    <feMergeNode in="coloredBlur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
               </defs>
+
+              {/* Background glow */}
+              <circle cx="450" cy="450" r="380" fill="url(#centerGlow)" />
+
+              {/* ── SEGMENTS ── */}
               <path
-                d="M340,340 L340,52 A288,288 0 0,1 596,196 Z"
-                fill="#E8541A"
-              />
-              <path
-                d="M340,340 L596,196 A288,288 0 0,1 596,484 Z"
-                fill="#C4440E"
-              />
-              <path
-                d="M340,340 L596,484 A288,288 0 0,1 84,484 Z"
-                fill="#9E3509"
+                d="M450,450 L450,105 A345,345 0 0,1 719.7,234.9 Z"
+                fill="#059669"
               />
               <path
-                d="M340,340 L84,484 A288,288 0 0,1 84,196 Z"
-                fill="#C4440E"
+                d="M450,450 L719.7,234.9 A345,345 0 0,1 786.4,526.8 Z"
+                fill="#047857"
               />
               <path
-                d="M340,340 L84,196 A288,288 0 0,1 340,52 Z"
-                fill="#1a1a1a"
+                d="M450,450 L786.4,526.8 A345,345 0 0,1 599.7,760.8 Z"
+                fill="#064e3b"
+              />
+              <path
+                d="M450,450 L599.7,760.8 A345,345 0 0,1 300.3,760.8 Z"
+                fill="#022c22"
+              />
+              <path
+                d="M450,450 L300.3,760.8 A345,345 0 0,1 113.6,526.8 Z"
+                fill="#064e3b"
+              />
+              <path
+                d="M450,450 L113.6,526.8 A345,345 0 0,1 180.3,234.9 Z"
+                fill="#047857"
+              />
+              <path
+                d="M450,450 L180.3,234.9 A345,345 0 0,1 450,105 Z"
+                fill="#059669"
+              />
+
+              {/* ── DIVIDER LINES ── */}
+              <line
+                x1="450"
+                y1="450"
+                x2="450"
+                y2="102"
+                stroke="#0f172a"
+                strokeWidth="3"
               />
               <line
-                x1="340"
-                y1="340"
-                x2="340"
-                y2="38"
-                stroke="white"
-                strokeWidth="4"
+                x1="450"
+                y1="450"
+                x2="721"
+                y2="233"
+                stroke="#0f172a"
+                strokeWidth="3"
               />
               <line
-                x1="340"
-                y1="340"
-                x2="598"
-                y2="193"
-                stroke="white"
-                strokeWidth="4"
+                x1="450"
+                y1="450"
+                x2="788"
+                y2="525"
+                stroke="#0f172a"
+                strokeWidth="3"
               />
               <line
-                x1="340"
-                y1="340"
-                x2="598"
-                y2="487"
-                stroke="white"
-                strokeWidth="4"
+                x1="450"
+                y1="450"
+                x2="601"
+                y2="763"
+                stroke="#0f172a"
+                strokeWidth="3"
               />
               <line
-                x1="340"
-                y1="340"
-                x2="82"
-                y2="487"
-                stroke="white"
-                strokeWidth="4"
+                x1="450"
+                y1="450"
+                x2="299"
+                y2="763"
+                stroke="#0f172a"
+                strokeWidth="3"
               />
               <line
-                x1="340"
-                y1="340"
-                x2="82"
-                y2="193"
-                stroke="white"
-                strokeWidth="4"
+                x1="450"
+                y1="450"
+                x2="112"
+                y2="525"
+                stroke="#0f172a"
+                strokeWidth="3"
               />
+              <line
+                x1="450"
+                y1="450"
+                x2="179"
+                y2="233"
+                stroke="#0f172a"
+                strokeWidth="3"
+              />
+
+              {/* Outer ring */}
               <circle
-                cx="340"
-                cy="340"
-                r="290"
+                cx="450"
+                cy="450"
+                r="346"
                 fill="none"
-                stroke="white"
-                strokeWidth="2"
-                opacity="0.3"
+                stroke="#10b981"
+                strokeWidth="1.5"
+                opacity="0.35"
               />
-              <circle cx="340" cy="340" r="130" fill="white" />
-              <circle
-                cx="340"
-                cy="340"
-                r="130"
-                fill="none"
-                stroke="#E8541A"
-                strokeWidth="2"
-              />
-              <text
-                x="340"
-                y="326"
-                textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="22"
-                fontWeight="700"
-                fill="#0F0E0D"
-              >
-                System
-              </text>
-              <text
-                x="340"
-                y="354"
-                textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="22"
-                fontWeight="700"
-                fill="#0F0E0D"
-              >
-                Integration
-              </text>
-              <path
-                d="M270,340 A70,70 0 1,1 340,410"
-                fill="none"
-                stroke="#E8541A"
-                strokeWidth="2"
-                strokeLinecap="round"
-                markerEnd="url(#arr-orange)"
-              />
-              <text
-                textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="15"
-                fontWeight="600"
-                fill="white"
-              >
-                <tspan x="463" y="148">
-                  Consultancy &amp;
-                </tspan>
-                <tspan x="463" dy="20">
-                  Capture
-                </tspan>
-                <tspan x="463" dy="20">
+
+              {/* ── SEGMENT LABELS ── */}
+
+              {/* S1: Requirements Gathering */}
+              <g transform="translate(541.1,260.8) rotate(25.714)">
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="-17"
+                >
                   Requirements
-                </tspan>
-              </text>
-              <text
-                textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="15"
-                fontWeight="600"
-                fill="white"
-              >
-                <tspan x="573" y="328">
-                  Plan and
-                </tspan>
-                <tspan x="573" dy="20">
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="0"
+                >
+                  Gathering
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'DM Sans',sans-serif"
+                  fontSize="10.5"
+                  fontWeight="400"
+                  fill="#a7f3d0"
+                  y="15"
+                >
+                  (Data Mining)
+                </text>
+              </g>
+
+              {/* S2: Solution Design */}
+              <g transform="translate(654.7,403.3) rotate(77.143)">
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="-16"
+                >
+                  Solution
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="0"
+                >
                   Design
-                </tspan>
-              </text>
-              <text
-                textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="15"
-                fontWeight="600"
-                fill="white"
-              >
-                <tspan x="340" y="560">
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'DM Sans',sans-serif"
+                  fontSize="10.5"
+                  fontWeight="400"
+                  fill="#a7f3d0"
+                  y="15"
+                >
+                  (Blueprint)
+                </text>
+              </g>
+
+              {/* S3: Architecture Planning */}
+              <g transform="translate(614.2,580.9) rotate(-51.429)">
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="-8"
+                >
+                  Architecture
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="9"
+                >
+                  Planning
+                </text>
+              </g>
+
+              {/* S4: Implementation & Deployment */}
+              <g transform="translate(450,660) rotate(0)">
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="-8"
+                >
                   Implementation
-                </tspan>
-              </text>
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="9"
+                >
+                  &amp; Deployment
+                </text>
+              </g>
+
+              {/* S5: Testing & Quality Assurance */}
+              <g transform="translate(285.8,580.9) rotate(51.429)">
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="-17"
+                >
+                  Testing &amp;
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="0"
+                >
+                  Quality
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="17"
+                >
+                  Assurance
+                </text>
+              </g>
+
+              {/* S6: Go-Live & Optimization */}
+              <g transform="translate(245.3,403.3) rotate(282.857)">
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="-8"
+                >
+                  Go-Live &amp;
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="9"
+                >
+                  Optimization
+                </text>
+              </g>
+
+              {/* S7: Maintenance & Continuous Improvement */}
+              <g transform="translate(358.9,260.8) rotate(334.286)">
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="-17"
+                >
+                  Maintenance &amp;
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="0"
+                >
+                  Continuous
+                </text>
+                <text
+                  textAnchor="middle"
+                  fontFamily="'Syne',sans-serif"
+                  fontSize="13"
+                  fontWeight="700"
+                  fill="white"
+                  y="17"
+                >
+                  Improvement
+                </text>
+              </g>
+
+              {/* ── NUMBER BADGES ── */}
+              <circle
+                cx="586.7"
+                cy="166.2"
+                r="15"
+                fill="rgba(255,255,255,0.2)"
+                stroke="rgba(255,255,255,0.5)"
+                strokeWidth="1.2"
+              />
               <text
+                x="586.7"
+                y="171.5"
                 textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="15"
-                fontWeight="600"
-                fill="white"
-              >
-                <tspan x="107" y="328">
-                  Validate
-                </tspan>
-                <tspan x="107" dy="20">
-                  Performance
-                </tspan>
-              </text>
-              <text
-                textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="15"
-                fontWeight="600"
-                fill="white"
-              >
-                <tspan x="217" y="148">
-                  Support
-                </tspan>
-              </text>
-              <circle cx="434" cy="108" r="10" fill="rgba(255,255,255,0.2)" />
-              <text
-                x="434"
-                y="113"
-                textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="11"
-                fontWeight="700"
+                fontFamily="'Syne',sans-serif"
+                fontSize="13"
+                fontWeight="800"
                 fill="white"
               >
                 1
               </text>
-              <circle cx="590" cy="290" r="10" fill="rgba(255,255,255,0.2)" />
+
+              <circle
+                cx="757.1"
+                cy="379.9"
+                r="15"
+                fill="rgba(255,255,255,0.2)"
+                stroke="rgba(255,255,255,0.5)"
+                strokeWidth="1.2"
+              />
               <text
-                x="590"
-                y="295"
+                x="757.1"
+                y="385.2"
                 textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="11"
-                fontWeight="700"
+                fontFamily="'Syne',sans-serif"
+                fontSize="13"
+                fontWeight="800"
                 fill="white"
               >
                 2
               </text>
-              <circle cx="440" cy="590" r="10" fill="rgba(255,255,255,0.2)" />
+
+              <circle
+                cx="696.3"
+                cy="646.4"
+                r="15"
+                fill="rgba(255,255,255,0.2)"
+                stroke="rgba(255,255,255,0.5)"
+                strokeWidth="1.2"
+              />
               <text
-                x="440"
-                y="595"
+                x="696.3"
+                y="651.7"
                 textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="11"
-                fontWeight="700"
+                fontFamily="'Syne',sans-serif"
+                fontSize="13"
+                fontWeight="800"
                 fill="white"
               >
                 3
               </text>
-              <circle cx="90" cy="290" r="10" fill="rgba(255,255,255,0.2)" />
+
+              <circle
+                cx="450"
+                cy="765"
+                r="15"
+                fill="rgba(255,255,255,0.2)"
+                stroke="rgba(255,255,255,0.5)"
+                strokeWidth="1.2"
+              />
               <text
-                x="90"
-                y="295"
+                x="450"
+                y="770.3"
                 textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="11"
-                fontWeight="700"
+                fontFamily="'Syne',sans-serif"
+                fontSize="13"
+                fontWeight="800"
                 fill="white"
               >
                 4
               </text>
-              <circle cx="187" cy="108" r="10" fill="rgba(255,255,255,0.2)" />
+
+              <circle
+                cx="203.7"
+                cy="646.4"
+                r="15"
+                fill="rgba(255,255,255,0.2)"
+                stroke="rgba(255,255,255,0.5)"
+                strokeWidth="1.2"
+              />
               <text
-                x="187"
-                y="113"
+                x="203.7"
+                y="651.7"
                 textAnchor="middle"
-                fontFamily="'Syne', sans-serif"
-                fontSize="11"
-                fontWeight="700"
+                fontFamily="'Syne',sans-serif"
+                fontSize="13"
+                fontWeight="800"
                 fill="white"
               >
                 5
               </text>
+
+              <circle
+                cx="142.9"
+                cy="379.9"
+                r="15"
+                fill="rgba(255,255,255,0.2)"
+                stroke="rgba(255,255,255,0.5)"
+                strokeWidth="1.2"
+              />
+              <text
+                x="142.9"
+                y="385.2"
+                textAnchor="middle"
+                fontFamily="'Syne',sans-serif"
+                fontSize="13"
+                fontWeight="800"
+                fill="white"
+              >
+                6
+              </text>
+
+              <circle
+                cx="313.3"
+                cy="166.2"
+                r="15"
+                fill="rgba(255,255,255,0.2)"
+                stroke="rgba(255,255,255,0.5)"
+                strokeWidth="1.2"
+              />
+              <text
+                x="313.3"
+                y="171.5"
+                textAnchor="middle"
+                fontFamily="'Syne',sans-serif"
+                fontSize="13"
+                fontWeight="800"
+                fill="white"
+              >
+                7
+              </text>
+
+              {/* ── CENTER CIRCLE ── */}
+              <circle cx="450" cy="450" r="148" fill="#0f172a" />
+              <circle
+                cx="450"
+                cy="450"
+                r="148"
+                fill="none"
+                stroke="#10b981"
+                strokeWidth="2"
+                opacity="0.8"
+              />
+              <circle
+                cx="450"
+                cy="450"
+                r="140"
+                fill="none"
+                stroke="#059669"
+                strokeWidth="1"
+                opacity="0.25"
+              />
+
+              <text
+                x="450"
+                y="436"
+                textAnchor="middle"
+                fontFamily="'Syne',sans-serif"
+                fontSize="22"
+                fontWeight="800"
+                fill="#10b981"
+              >
+                System
+              </text>
+              <text
+                x="450"
+                y="464"
+                textAnchor="middle"
+                fontFamily="'Syne',sans-serif"
+                fontSize="22"
+                fontWeight="800"
+                fill="#10b981"
+              >
+                Integration
+              </text>
+
+              {/* Circular arrow */}
+              <path
+                d="M375,450 A75,75 0 1,1 450,525"
+                fill="none"
+                stroke="#059669"
+                strokeWidth="2"
+                strokeLinecap="round"
+                markerEnd="url(#arr-green)"
+                opacity="0.6"
+              />
             </svg>
           </div>
 

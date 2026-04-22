@@ -10,6 +10,7 @@ import Banner from "./components/Banner";
 import ProjDev from "./components/ProjDev";
 import Partners from "./components/Partners";
 import ContactUs from "./components/ContactUs";
+import ContactForm from "./components/contactForm";
 import Footer from "./components/Footer";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <ProjDev />
       <Partners />
       <ContactUs />
+      <ContactForm />
       <Footer />
     </>
   );

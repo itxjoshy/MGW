@@ -40,8 +40,8 @@ function Partners() {
         <p>trusted by widely recognoised names in the industry</p>
         <div className="image-grid">
           {Images.map((image, _i) => (
-            <div className="image-container">
-              <img src={image} key={_i} alt="partner-image" />
+            <div className="image-container" key={_i}>
+              <img src={image} alt="partner-image" />
             </div>
           ))}
         </div>
