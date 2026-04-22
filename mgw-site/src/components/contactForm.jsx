@@ -1,13 +1,13 @@
 import { useState } from "react";
-import "./contactForm.css";
+import "./contactform.css";
 
 const SERVICES = [
-  "Web Development",
-  "Mobile App Development",
-  "UI/UX Design",
-  "System Integration",
-  "Digital Strategy",
-  "Cloud Solutions",
+  "T Infrastructure Solutions",
+  "Network & Communication",
+  "Cloud Services",
+  "Data Protection",
+  "Security Solutions",
+  "Managed Services",
 ];
 
 const ContactForm = () => {
@@ -81,26 +81,13 @@ const ContactForm = () => {
                 />
               </svg>
             </span>
-            <span>+1(555) 123-4567</span>
-          </div>
-
-          <div className="sp-contact-item">
-            <span className="sp-contact-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+            <span>
+              <span>
+                08060076250
+                <br />
+                07030881335
+              </span>
             </span>
-            <span>San Francisco, CA</span>
           </div>
 
           <div className="sp-contact-item">
@@ -124,7 +111,9 @@ const ContactForm = () => {
                 />
               </svg>
             </span>
-            <span>hello@digitalagency.com</span>
+            <a href="mailto:sales@smartsecure.com.ng">
+              sales@smartsecure.com.ng
+            </a>
           </div>
         </div>
       </div>

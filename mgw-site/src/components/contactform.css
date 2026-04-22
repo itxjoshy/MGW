@@ -81,6 +81,9 @@
   color: var(--color-primary);
   font-weight: 500;
 }
+.sp-contact-item a {
+  color: var(--color-primary);
+}
 
 .sp-contact-icon {
   display: flex;

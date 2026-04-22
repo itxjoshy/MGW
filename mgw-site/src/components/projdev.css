@@ -18,7 +18,22 @@
 .proj-dev-content .proj-image {
   margin-top: -80px;
 }
-
+.section-heading {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+.section-heading h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-black);
+  color: var(--color-accent);
+  letter-spacing: -1px;
+}
+.section-heading p {
+  font-family: var(--font-body);
+  color: var(--color-primary);
+  font-size: var(--text-sm);
+}
 .steps-grid {
   display: grid;
   gap: 0.8rem;

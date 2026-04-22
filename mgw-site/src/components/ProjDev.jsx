@@ -115,6 +115,14 @@ function ProjDev() {
   return (
     <section id="project-delivery" className="project-delivery-section">
       <div className="container">
+        <div className="section-heading">
+          <h2>Our Approach</h2>
+          <p>
+            From discovery to optimisation — practical, secure systems
+            integration across Africa.
+          </p>
+        </div>
+
         <div className="proj-dev-content">
           <div className="proj-image">
             <svg
