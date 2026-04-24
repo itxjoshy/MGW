@@ -60,6 +60,7 @@ header .navlinks a {
   display: flex;
   align-items: center;
   height: 100%;
+  text-wrap: nowrap;
 }
 
 header .navlinks a:hover {

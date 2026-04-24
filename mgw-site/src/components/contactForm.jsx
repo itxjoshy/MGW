@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./contactform.css";
 
 const SERVICES = [
-  "T Infrastructure Solutions",
+  "IT Infrastructure Solutions",
   "Network & Communication",
   "Cloud Services",
   "Data Protection",
@@ -25,7 +25,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="sp-section container">
+    <section className="sp-section container" id="contact-form">
       {/* LEFT COLUMN */}
       <div className="sp-left">
         <button className="sp-badge">

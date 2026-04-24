@@ -3,6 +3,11 @@ import bgVid from "/herobgvid.mp4";
 import "./main.css";
 
 function main({ marquee }) {
+  const handleNavClick = (e, hash) => {
+    e.preventDefault();
+    const el = document.getElementById(hash.replace("#", ""));
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <main className="main" id="home">
       <video
@@ -44,8 +49,12 @@ function main({ marquee }) {
           </p>
         </div>
         <div className="cta-buttons">
-          <button>Contact Us</button>
-          <button>View Services</button>
+          <button onClick={(e) => handleNavClick(e, "#contact")}>
+            Contact Us
+          </button>
+          <button onClick={(e) => handleNavClick(e, "#services")}>
+            View Services
+          </button>
         </div>
       </div>
       {marquee}

@@ -73,7 +73,7 @@ function Header() {
         </div>
 
         <div className="header-cta">
-          <button onClick={(e) => handleNavClick(e, "#contact")}>
+          <button onClick={(e) => handleNavClick(e, "#contact-form")}>
             Get started
           </button>
         </div>
